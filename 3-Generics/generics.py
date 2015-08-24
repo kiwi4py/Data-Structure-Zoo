@@ -11,6 +11,7 @@ notice that I haven't modified anything to make it
 work with our fruit object. Pay close attention to
 the places in which the '<' is used.
 """
+
 def quick_sort(arr, first, last):
     """ Quicksort
         Complexity: O(n log(n))
@@ -62,11 +63,11 @@ if __name__ == '__main__':
         print 'An orange has less seeds!'
 
     # Now let's see that sorting is unchanged
-    fruit_basket = [ Fruit(random.randint(0,30), 4) for x in xrange(30)]
+    fruit_basket = [Fruit(random.randint(0, 30), 4) for x in xrange(30)]
 
     print 'Before:'
     for fruit in fruit_basket:
-        print str(fruit),',',
+        print str(fruit), ',',
 
     print 'Sorting...'
     # Note: This method works because we're modifying fruit_basket
@@ -75,4 +76,4 @@ if __name__ == '__main__':
 
     print 'After:'
     for fruit in fruit_basket:
-        print str(fruit),',',
+        print str(fruit), ',',
